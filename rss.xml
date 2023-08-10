@@ -15,6 +15,9 @@
     <title>Mick Fleetwood's Maui Retreat Devastated by Wildfires</title>
     <link>https://rocknyc.org/</link>
     <description><![CDATA[
+
+    <img src="https://raw.githubusercontent.com/musicis3965/rockNYC/main/articleImages/article1Image.png" alt="Article 1 Image">
+        <div style="font-size: 10px; text-align: center;">Artist Rendering, Not Actual Event</div>
     
     <p>Mick Fleetwood's beloved Hawaiian establishment, Fleetwood's on Front Street, has tragically been claimed by the escalating wildfires in Maui.
 
@@ -25,19 +28,17 @@
 <p>The restaurant's official channels also reached out, noting, "As most of you know Maui has been dealing with extreme fires created by the residual winds of Hurricane Dora. Lahaina Town has taken the brunt of it. ... Mahalo for your continued thoughts and prayers for our community and our first responders."
 
 <p>Concluding with heartfelt sentiment, Mick Fleetwood shared, "On behalf of myself and my family, I share my heartfelt thoughts and prayers for the people of Maui." Let's not forget other renowned artists like Steven Tyler and Willie Nelson also have roots in Hawaii, and they, too, are feeling the impact.
-
-
-
+</p>
 ]]>
 </description>
-    <image>https://raw.githubusercontent.com/musicis3965/rockNYC/main/articleImages/article1Image.png</image>
+    
   </item>
 
   <item>
     <title>Article 2 Title</title>
     <link>https://rocknyc.org/</link>
     <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</description>
-    <image>https://raw.githubusercontent.com/path-to-your/image2.jpg</image>
+   
   </item>
 
 </channel>
