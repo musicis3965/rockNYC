@@ -11,6 +11,35 @@
 <!-- <![CDATA[  ]]> -->
 <!-- https://rocknyc.org/rss.xml -->
 
+
+
+ <item>
+    <title>Wolfgang Van Halen: Lessons from Rock Royalty & Hitting the Stage with Mammoth</title>
+    <link>https://rocknyc.org/</link>
+    <description>
+    <![CDATA[
+<body>
+
+<h1>Wolfgang Van Halen: Rocking Out of His Dad's Shadow and Into the Mammoth Limelight</h1>
+
+<p>Wolfgang Van Halen, who once rocked the bass with the iconic Van Halen, is now making waves with his own gig, Mammoth WVH. After the legendary Eddie Van Halen passed in 2020, Wolfgang revealed his heart-wrenching tribute "Distance" under Mammoth WVH, setting the stage for their debut album in 2021. And guess what, rockers? Like the legends Dave Grohl and Prince, Wolfgang jammed every instrument on that album! With his latest masterpiece, "Mammoth II", out now and the crew touring alongside Metallica, Wolfgang took a moment with Rolling Stone to drop some wisdom from his Van Halen days.</p>
+
+<p>"With Van Halen, I learned a lot of how I didn’t want things to be with Mammoth. Why do we need to be walking around on eggshells? Why is there a problem all the time? Like, why can’t we just get along and play music? Don’t we all love music enough to put our bullshit aside and actually have a good time having this be our livelihood? Shouldn’t it be easier than this?" he reflected. Wolfgang's mission for Mammoth? A rock-solid team that's all about the tunes and can ride through any storm. And here's a fun tidbit: Wolfgang might just try his hand at other instruments on stage in the future. Rock on, Wolfgang!</p>
+
+</body>
+    ]]>
+    </description>
+    <image></image>
+  </item>
+
+
+
+
+
+
+
+
+
   <item>
     <title>Mick Fleetwood's Maui Retreat Devastated by Wildfires</title>
     <link>https://rocknyc.org/</link>
@@ -35,6 +64,9 @@
 <image>https://raw.githubusercontent.com/musicis3965/rockNYC/main/articleImages/article1Image.png</image>
     
   </item>
+<!-- new item -->
+<!-- ----------------- -->
+<!-- ----------------- -->
 
   <item>
     <title>Trisha, Keith and All-Stars Gear Up for ACM Honors!</title>
@@ -96,8 +128,36 @@
 
     ]]>
     </description>
-    <image>https://raw.githubusercontent.com/path-to-your/image2.jpg</image>
+    <image></image>
   </item>
+
+<!--  -->
+<!-- ----------------- -->
+<!-- ----------------- -->
+
+ 
+
+
+<!-- new item -->
+<!-- ----------------- -->
+<!--
+
+  <item>
+    <title>put headline here</title>
+    <link>https://rocknyc.org/</link>
+    <description>
+    <![CDATA[
+put HTML here
+    ]]>
+    </description>
+    <image></image>
+  </item>
+
+  -->
+
+  <!--  -->
+<!-- ----------------- -->
+<!-- ----------------- -->
 
 </channel>
 </rss>
