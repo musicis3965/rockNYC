@@ -33,22 +33,27 @@
             transform: scale(1.05);
         }
 
-        nav {
-            position: fixed;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            background-color: rgba(0,0,0,0.6);
-            padding: 20px;
-        }
+       @media (max-width: 768px) {
+    nav {
+        position: relative;
+        top: auto;
+        transform: none;
+        background-color: transparent;
+        text-align: center;
+        margin-top: 20px;
+    }
 
-        nav a {
-            color: white;
-            display: block;
-            margin-bottom: 10px;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
+    nav a {
+        margin-right: 20px;
+        display: inline-block;
+    }
+
+    /* Adding a top margin to the first article */
+    #article1 {
+        margin-top: 60px;  /* Adjust this value based on the size of the nav block */
+    }
+}
+
 
         nav a:hover {
             transform: translateX(10px);
