@@ -21,28 +21,29 @@
         header {
             width: 100%;
             background-image: url('https://raw.githubusercontent.com/musicis3965/rockNYC/main/Banner%20with%20Texture.png');
-            background-size: 100% auto; /* Image width always matches the header width */
+            background-size: 100% auto;
             background-position: center center;
             background-repeat: no-repeat;
-            padding-top: 57.37vw; /* Adjusted as per the image aspect ratio */
+            padding-top: 57.37vw;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: transform 0.3s;
+            z-index: 10;
+            position: relative;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        header:hover {
-            transform: scale(1.05);
-        }
-
-             nav {
+        nav {
             position: fixed;
             top: 50%;
             left: 0;
             transform: translateY(-50%);
             background-color: rgba(0, 0, 0, 0.6);
             padding: 20px;
+            z-index: 5; /* Ensure navigation is below header content but above the page content */
         }
 
         nav a {
@@ -72,10 +73,32 @@
             text-align: center;
         }
 
+        @media (min-width: 768px) {
+            header::before {
+                content: '';
+                display: block;
+                background-image: url('https://raw.githubusercontent.com/musicis3965/rockNYC/main/Banner%20with%20Texture.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 434px;
+                height: 249px;
+                margin-right: 20px;
+            }
+
+            header {
+                background-image: none;
+                height: auto;
+                padding: 0;
+                flex-direction: row;
+                justify-content: flex-start;
+                padding-left: 480px;
+            }
+        }
+
         @media (max-width: 768px) {
             nav {
-                position: static;  /* Change to static so it doesn't disappear */
-                background-color: rgba(0, 0, 0, 0.6); /* Add a background to make it visible against the content */
+                position: static;
+                background-color: rgba(0, 0, 0, 0.6);
                 text-align: center;
                 padding: 10px 0;
             }
@@ -86,32 +109,10 @@
                 margin-bottom: 0;
             }
 
-                 #article1 {
+            #article1 {
                 margin-top: 20px;
             }
         }
-
-/* Adjustments for viewports wider than 768px */
-@media (min-width: 768px) {
-    header {
-        background-image: none; /* Remove the background image */
-        height: auto; /* Reset any previous height */
-        padding: 0;
-        flex-direction: row; /* Change flex direction to row */
-    }
-    
-    header::before {
-        content: ''; /* Create a pseudo-element for the banner image */
-        display: block;
-        background-image: url('https://raw.githubusercontent.com/musicis3965/rockNYC/main/Banner%20with%20Texture.png');
-        background-size: contain; /* Ensure the entire banner is visible */
-        background-repeat: no-repeat;
-        width: 434px; /* Set fixed dimensions for desktop */
-        height: 249px;
-        margin-right: 20px; /* Add some spacing between the image and the title */
-    }
-}
-        
     </style>
 </head>
 
