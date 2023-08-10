@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,27 +34,22 @@
             transform: scale(1.05);
         }
 
-       @media (max-width: 768px) {
-    nav {
-        position: relative;
-        top: auto;
-        transform: none;
-        background-color: transparent;
-        text-align: center;
-        margin-top: 20px;
-    }
+        nav {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
 
-    nav a {
-        margin-right: 20px;
-        display: inline-block;
-    }
-
-    /* Adding a top margin to the first article */
-    #article1 {
-        margin-top: 60px;  /* Adjust this value based on the size of the nav block */
-    }
-}
-
+        nav a {
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
 
         nav a:hover {
             transform: translateX(10px);
@@ -63,12 +59,12 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: rgba(255,255,255,0.7); /* semi-opaque white background to enhance readability */
-            border-radius: 10px; /* rounded corners for articles */
+            background-color: rgba(255, 255, 255, 0.7); /* semi-opaque white background */
+            border-radius: 10px; /* rounded corners */
         }
 
         footer {
-            background-color: rgba(51,51,51,0.7); /* semi-opaque footer */
+            background-color: rgba(51, 51, 51, 0.7); /* semi-opaque footer */
             color: white;
             padding: 10px;
             text-align: center;
@@ -88,9 +84,15 @@
                 margin-right: 20px;
                 display: inline-block;
             }
+
+            /* Added margin to the first article to prevent overlap */
+            #article1 {
+                margin-top: 60px; /* Adjust this value as needed */
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
         Your Blog Name
@@ -118,4 +120,5 @@
         We do not use cookies or track you in any way. <a href="#">Privacy Policy</a>
     </footer>
 </body>
+
 </html>
