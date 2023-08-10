@@ -19,21 +19,17 @@
         }
 
         header {
-            width: 100%;
             background-image: url('https://raw.githubusercontent.com/musicis3965/rockNYC/main/Banner%20with%20Texture.png');
-            background-size: 100% auto;
-            background-position: center center;
             background-repeat: no-repeat;
-            padding-top: 57.37vw;
-            color: white;
+            background-size: auto 249px;
+            background-position: left top;
+            height: 249px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: transform 0.3s;
-            z-index: 10;
-            position: relative;
             font-size: 2em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 4px #000;
+            transition: transform 0.3s;
         }
 
         nav {
@@ -43,7 +39,6 @@
             transform: translateY(-50%);
             background-color: rgba(0, 0, 0, 0.6);
             padding: 20px;
-            z-index: 5; /* Ensure navigation is below header content but above the page content */
         }
 
         nav a {
@@ -66,13 +61,12 @@
             border-radius: 10px;
         }
 
-    article img {
-            width: 100%;
+        article img {
+            max-width: 100%;
             height: auto;
-            margin-top: 10px;
-            border-radius: 5px;
+            margin: 10px 0;
         }
-        
+
         footer {
             background-color: rgba(51, 51, 51, 0.7);
             color: white;
@@ -80,32 +74,9 @@
             text-align: center;
         }
 
-        @media (min-width: 768px) {
-            header::before {
-                content: '';
-                display: block;
-                background-image: url('https://raw.githubusercontent.com/musicis3965/rockNYC/main/Banner%20with%20Texture.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 434px;
-                height: 249px;
-                margin-right: 20px;
-            }
-
-            header {
-                background-image: none;
-                height: auto;
-                padding: 0;
-                flex-direction: row;
-                justify-content: flex-start;
-                padding-left: 480px;
-            }
-        }
-
         @media (max-width: 768px) {
             nav {
                 position: static;
-                background-color: rgba(0, 0, 0, 0.6);
                 text-align: center;
                 padding: 10px 0;
             }
@@ -119,6 +90,10 @@
             #article1 {
                 margin-top: 20px;
             }
+
+            header {
+                background-position: center top;
+            }
         }
     </style>
 </head>
@@ -131,26 +106,45 @@
     <nav>
         <a href="#article1">Article 1</a>
         <a href="#article2">Article 2</a>
-        <!-- Add more article links as needed -->
     </nav>
 
-     <article id="article1">
-        <h2>Article 1 Title</h2>
-        <img src="YOUR_IMAGE_URL_FOR_ARTICLE_1" alt="Description of image for Article 1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </article>
-
-   <article id="article2">
-        <h2>Article 2 Title</h2>
-        <img src="YOUR_IMAGE_URL_FOR_ARTICLE_2" alt="Description of image for Article 2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </article>
-
-    <!-- Add more articles as needed -->
+    <div id="articlesContainer">
+        <!-- Articles from RSS feed will be populated here -->
+    </div>
 
     <footer>
         We do not use cookies or track you in any way. <a href="https://musicis3965.github.io/rockNYC/privacypolicy.html">Privacy Policy</a>
     </footer>
+
+    <script>
+        window.onload = function() {
+            fetch('https://your-domain.com/rss.xml')
+                .then(response => response.text())
+                .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+                .then(data => {
+                    const items = data.querySelectorAll("item");
+                    let html = "";
+                    
+                    items.forEach(el => {
+                        let title = el.querySelector("title").innerHTML;
+                        let link = el.querySelector("link").innerHTML;
+                        let description = el.querySelector("description").innerHTML;
+                        let imageSrc = (el.querySelector("image")) ? el.querySelector("image").innerHTML : '';
+
+                        html += `
+                            <article>
+                                <h2><a href="${link}">${title}</a></h2>
+                                <img src="${imageSrc}" alt="${title}" />
+                                <p>${description}</p>
+                            </article>
+                        `;
+                    });
+
+                    document.querySelector("#articlesContainer").innerHTML = html;
+                });
+        };
+    </script>
+
 </body>
 
 </html>
