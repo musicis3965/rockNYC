@@ -16,8 +16,9 @@
     <link>https://rocknyc.org/</link>
     <description><![CDATA[
 
-    <img src="https://raw.githubusercontent.com/musicis3965/rockNYC/main/articleImages/article1Image.png" alt="Article 1 Image">
+    
         <div style="font-size: 10px; text-align: center;">Artist Rendering, Not Actual Event</div>
+        </br>
     
     <p>Mick Fleetwood's beloved Hawaiian establishment, Fleetwood's on Front Street, has tragically been claimed by the escalating wildfires in Maui.
 
@@ -31,6 +32,7 @@
 </p>
 ]]>
 </description>
+<image>https://raw.githubusercontent.com/musicis3965/rockNYC/main/articleImages/article1Image.png</image>
     
   </item>
 
@@ -38,7 +40,7 @@
     <title>Article 2 Title</title>
     <link>https://rocknyc.org/</link>
     <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</description>
-   
+    <image>https://raw.githubusercontent.com/path-to-your/image2.jpg</image>
   </item>
 
 </channel>
