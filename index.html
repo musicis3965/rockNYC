@@ -91,6 +91,27 @@
             }
         }
 
+/* Adjustments for viewports wider than 768px */
+@media (min-width: 768px) {
+    header {
+        background-image: none; /* Remove the background image */
+        height: auto; /* Reset any previous height */
+        padding: 0;
+        flex-direction: row; /* Change flex direction to row */
+    }
+    
+    header::before {
+        content: ''; /* Create a pseudo-element for the banner image */
+        display: block;
+        background-image: url('https://raw.githubusercontent.com/musicis3965/rockNYC/main/Banner%20with%20Texture.png');
+        background-size: contain; /* Ensure the entire banner is visible */
+        background-repeat: no-repeat;
+        width: 434px; /* Set fixed dimensions for desktop */
+        height: 249px;
+        margin-right: 20px; /* Add some spacing between the image and the title */
+    }
+}
+        
     </style>
 </head>
 
