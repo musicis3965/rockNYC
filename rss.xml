@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+<channel>
+  <title>Rock NYC.org RSS Feed</title>
+  <link>https://rocknyc.org</link>
+  <description>Latest articles from Rock NYC.org</description>
+  
+  <item>
+    <title>Article 1 Title</title>
+    <link>https://rocknyc.org/article1</link>
+    <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</description>
+    <image>https://raw.githubusercontent.com/musicis3965/rockNYC/main/musicis3965_Maui_Retreat_Devastated_by_Wildfires_12bf9708-782b-4339-b4e8-fa0957f74e68.png</image>
+  </item>
+
+  <item>
+    <title>Article 2 Title</title>
+    <link>https://rocknyc.org/article2</link>
+    <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</description>
+    <image>https://raw.githubusercontent.com/path-to-your/image2.jpg</image>
+  </item>
+
+</channel>
+</rss>
