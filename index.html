@@ -24,16 +24,31 @@
         }
 
         .placeholder {
-            width: 2560px; /* Modify as needed */
-            height: 1440px; /* Modify as needed */
-            background-color: #ccc; /* This is just a placeholder gray. Replace with your actual image using `background-image` */
-            border-radius: 5px;
+            background-image: url('https://raw.githubusercontent.com/musicis3965/rockNYC/main/coming%20soon%20art.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%; 
+            max-width: 2560px; /* this ensures the image does not get bigger than its natural size */
+            padding-top: 56.25%; /* this is for an image with a 16:9 aspect ratio */
+            position: relative;
+        }
+
+        .placeholder img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
 
 <body>
-    <div class='https://raw.githubusercontent.com/musicis3965/rockNYC/main/coming%20soon%20art.png'></div> <!-- This is where your image will go -->
+    <div class="placeholder">
+        <a href="https://www.ridingretroradio.com">
+            <img src="https://raw.githubusercontent.com/musicis3965/rockNYC/main/coming%20soon%20art.png" alt="Coming Soon Art">
+        </a>
+    </div>
 </body>
 
 </html>
